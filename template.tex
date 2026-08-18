@@ -1,0 +1,140 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% Updated for Sourav Das - OpenStudio experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[letterpaper]{twentysecondcv}
+\usepackage{xcolor}
+
+\renewcommand{\baselinestretch}{0.93}
+
+% Compact lists keep the resume within one page after adding OpenStudio.
+\newenvironment{compactitemize}{%
+  \begin{itemize}
+  \RaggedRight
+  \setlength{\itemsep}{0.08em}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+  \setlength{\topsep}{0.08em}
+}{\end{itemize}}
+
+\newcommand\skills{
+~
+	\smartdiagram[bubble diagram]{
+        \textbf{React}\\\textbf{TypeScript},
+        \textbf{C++}\\\textbf{JUCE},
+        \textbf{Audio}\\\textbf{AI},
+        \textbf{WebGL}\\\textbf{Canvas},
+        \textbf{Graph}\\\textbf{Viz},
+        \textbf{Next.js},
+        \textbf{Python},
+        \textbf{Cypress},
+        \textbf{Vite},
+        \textbf{WebRTC}
+    }
+}
+
+\newcommand{\openstudiobrand}{%
+  \href{https://openstudio.org.in/}{%
+    \raisebox{-0.22\height}{\includegraphics[height=0.34cm]{img/OpenStudio_logo.png}}%
+    \hspace{0.28em}OpenStudio%
+  }%
+}
+
+\aboutme{
+\\
+{\color{black}Senior Software Engineer with 8+ years building performant frontend systems, graph visualization, blockchain analytics, audio tooling, and AI systems.}
+}
+
+\cveducation{
+\\
+{\color{black}\textbf{B.Tech., Computer Science}}\\
+{\color{black}Netaji Subhash Engineering College}\\
+{\color{black}2013 - 2017}
+}
+
+\cvname{SOURAV DAS}
+\cvjobtitle{ Senior Software Engineer }
+
+\cvlinkedin{srvds7th}
+\cvnumberphone{(+91) 8599922556}
+\cvmail{srvds7th@hotmail.com}
+\cvgithub{sdevil7th}
+\cvwebsite{sourav-das.in}
+
+\begin{document}
+
+\makeprofile
+
+\section{Experience}
+
+\begin{twenty}
+\twentyitem
+{Jan 2026 -}
+{Present}
+{Solo Founder \& Senior Software Engineer}
+{\openstudiobrand}
+{}
+{\begin{compactitemize}
+\item Created a local-first DAW that unifies native low-latency audio, timeline editing, plugin hosting, pitch/audio analysis, and AI-assisted music workflows.
+\item Delivered production depth across multitrack recording, piano roll editing, mixer/routing, VST3-focused plugin workflows, built-in FX, and render/export paths.
+\item Reduced release and runtime friction with optional local AI setup, appcasts, manifests, stable downloads, and GitHub-to-Netlify publishing.
+\item \textbf{Tech Stack:} \textit{C++, JUCE, React, TypeScript, Zustand, Vite, Konva, Python, CMake, WebView2, Netlify}
+\end{compactitemize}}
+\twentyitem
+{Sep 2021 -}
+{Dec 2025}
+{Senior Software Engineer (Remote)}
+{\href{https://www.merklescience.com/}{\includegraphics[height=0.4cm]{img/Merkle_Science_Logo.png}}}
+{}
+{\begin{compactitemize}
+\item Led Tracker, a blockchain investigation workspace for reasoning across UTXO, EVM, L2, and cross-chain transaction graphs from a unified visual model.
+\item Improved forensic accuracy and analyst throughput with ClickHouse-backed graph analytics, traversal UX, and Txn Split View synchronization.
+\item Cut load/render overhead by \(\sim\)40\% through headless frontend architecture, lazy loading, CDN strategy, and graph-rendering pipeline optimization.
+\item \textbf{Tech Stack:} \textit{React, Next.js, TypeScript, Vue, Regraph, React Query, Tailwind, Jest, Vite, Cypress, Auth0, Python, Django}
+\end{compactitemize}}
+\twentyitem
+{Aug 2020 -}
+{Sep 2021}
+{Software Developer Contractor (Remote)}
+{\href{https://www.chainalysis.com/}{\includegraphics[height=0.4cm]{img/Chainalysis_logo.png}}}
+{}
+{\begin{compactitemize}
+\item Improved Reactor investigation performance and reliability for collaborative, high-traffic blockchain analysis workflows.
+\item Scaled graph visualization to 100,000+ node investigations with WebGL/VisJS rendering and BFF resilience patterns over distributed indexers.
+\item \textbf{Tech Stack:} \textit{Angular, VisJS, RxJS, Datadog, Java, Cypress}
+\end{compactitemize}}
+\twentyitem
+{Jun 2019 -}
+{Jul 2020}
+{Frontend Engineer}
+{\href{https://spotdraft.com/}{\includegraphics[height=0.4cm]{img/SpotDraft_logo.png}}}
+{}
+{\begin{compactitemize}
+\item Improved contract collaboration reliability with CRDT-style conflict handling, optimistic UI, and isolated editor rendering for heavy document workflows.
+\item Increased acquisition and workflow reach through SEO-focused Gatsby/GraphQL surfaces and scalable legal operations tooling.
+\item \textbf{Tech Stack:} \textit{Angular, React, Gatsby, GraphQL, Redux, RxJS, SCSS}
+\end{compactitemize}}
+\twentyitem
+{Nov 2018 -}
+{May 2019}
+{UI Developer}
+{\href{https://noodle.ai/}{\includegraphics[height=0.4cm]{img/Noodle_AI_logo.png}}}
+{}
+{\begin{compactitemize}
+\item Turned AI-generated manufacturing and supply-chain forecasts into React/D3 decision dashboards and executive-facing PoCs.
+\item \textbf{Tech Stack:} \textit{React, Redux, SCSS, D3.js, RxJS, Figma}
+\end{compactitemize}}
+\twentyitem
+{Nov 2017 -}
+{Oct 2018}
+{Frontend Developer}
+{\href{http://www.codehall.in/}{\includegraphics[height=0.4cm]{img/Codehall_Technologies_logo.png}}}
+{}
+{\begin{compactitemize}
+\item Delivered frontend systems for ZenPrivex crypto-token KYC, RichRelevance e-commerce personalization/testing, and a college-search product while mentoring junior engineers.
+\item \textbf{Tech Stack:} \textit{React, Redux, Vue, SCSS, Webpack, Python, Django}
+\end{compactitemize}}
+\end{twenty}
+
+\end{document}
