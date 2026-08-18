@@ -7,16 +7,20 @@
 \usepackage{xcolor}
 
 \renewcommand{\baselinestretch}{0.93}
+\hyphenpenalty=8000
+\exhyphenpenalty=8000
 
 % Compact lists keep the resume within one page after adding OpenStudio.
 \newenvironment{compactitemize}{%
   \begin{itemize}
   \RaggedRight
-  \setlength{\itemsep}{0.08em}
+  \setlength{\itemsep}{0.02em}
   \setlength{\parskip}{0pt}
   \setlength{\parsep}{0pt}
-  \setlength{\topsep}{0.08em}
+  \setlength{\topsep}{0.02em}
 }{\end{itemize}}
+
+\setlength{\experienceitemsep}{0.5em}
 
 \newcommand\skills{
 ~
@@ -85,9 +89,8 @@
 {\openstudiobrand}
 {}
 {\begin{compactitemize}
-\item Sole founder and developer of a native, local-first DAW spanning a C++/JUCE audio engine and React/TypeScript UI; built recording, MIDI/piano-roll editing, mixer/routing, plugin hosting, pitch tooling, and render/export workflows.
-\item Integrated local AI for stem separation, ACE-Step music generation, and Stable Audio; replaced the earlier ComfyUI ACE-Step route with native Hugging Face Diffusers for approximately 3x faster generation.
-\item AI coding agents supported the build, but there were no other human contributors; I handled product design, implementation, and delivery end-to-end.
+\item Sole founder and developer of a native, local-first DAW spanning a C++/JUCE audio engine and React/TypeScript UI, including recording, MIDI, mixer/routing, plugin hosting, pitch tooling and render/export workflows.
+\item Integrated local stem separation, ACE-Step and Stable Audio workflows; moving ACE-Step from the earlier ComfyUI route to native Hugging Face Diffusers delivered approximately 3x faster generation.
 \end{compactitemize}}
 \twentyitem
 {Sep 2021 -}
@@ -96,10 +99,9 @@
 {\href{https://www.merklescience.com/}{\includegraphics[height=0.4cm]{img/Merkle_Science_Logo.png}}}
 {}
 {\begin{compactitemize}
-\item Owned the Tracker frontend end-to-end from greenfield through most of its first three years in production, personally implementing nearly all frontend functionality before mentoring junior engineers into the codebase.
-\item Built Transaction Split View, Cluster Analysis, Entity Search, Autofill, Watchlists, sharing/collaboration, cross-chain graphing, address/transaction views, Auto-Investigate, and reports for investigations spanning roughly 1K--100K nodes.
-\item Shaped API contracts and product design, joined customer/sales discussions, and improved responsiveness through lazy loading, caching, payload reduction, progressive data loading, and graph rendering/layout optimization.
-\item Mentored engineers across frontend, backend and blockchain concepts while contributing to reviews, interviews, sprint planning, and technical proposals across a five-person team.
+\item Owned the Tracker frontend from greenfield through most of its first three years in production, personally building nearly all frontend functionality before mentoring junior engineers into the codebase.
+\item Built Transaction Split View, Cluster Analysis, Entity Search, Autofill, Watchlists, sharing/collaboration, cross-chain graphing, Auto-Investigate and reports for investigation graphs spanning roughly 1K--100K nodes.
+\item Shaped API contracts and product design, joined customer/sales discussions, and improved responsiveness through caching, payload reduction, progressive loading and graph rendering/layout optimization while mentoring engineers in a five-person team.
 \end{compactitemize}}
 \twentyitem
 {Aug 2020 -}
@@ -108,8 +110,8 @@
 {\href{https://www.chainalysis.com/}{\includegraphics[height=0.4cm]{img/Chainalysis_logo.png}}}
 {}
 {\begin{compactitemize}
-\item One of three engineers who migrated the entire Reactor frontend from AngularJS to Angular 9 in roughly nine months while maintaining a live hybrid AngularJS/Angular application and continuing feature delivery.
-\item Optimized a VisJS fork and initial node positioning for faster, more predictable 100K+ node investigations; Cypress and Applitools regression coverage plus component-library work helped move releases from roughly monthly to weekly.
+\item One of three engineers who migrated the entire Reactor frontend from AngularJS to Angular 9 in roughly nine months while keeping a live hybrid application stable and continuing feature delivery.
+\item Optimized the VisJS fork and node positioning for predictable 100K+ node investigations; Cypress/Applitools regression coverage and component-library work helped move releases from roughly monthly to weekly.
 \end{compactitemize}}
 \twentyitem
 {Jun 2019 -}
@@ -118,7 +120,7 @@
 {\href{https://spotdraft.com/}{\includegraphics[height=0.4cm]{img/SpotDraft_logo.png}}}
 {}
 {\begin{compactitemize}
-\item Built spotdraft.com from scratch with Gatsby/GraphQL for fast delivery even on throttled 3G, and engineered collaborative contract-editor workflows with CRDT-style conflict handling, optimistic UI, isolated editor rendering, and role/permission-based access.
+\item Built spotdraft.com from scratch with Gatsby/GraphQL for fast delivery even on throttled 3G, and engineered collaborative contract editing with CRDT-style conflict handling, optimistic UI, isolated rendering and role/permission-based access.
 \end{compactitemize}}
 \twentyitem
 {Nov 2018 -}
@@ -127,7 +129,7 @@
 {\href{https://noodle.ai/}{\includegraphics[height=0.4cm]{img/Noodle_AI_logo.png}}}
 {}
 {\begin{compactitemize}
-\item Built React/D3 decision dashboards and executive-facing PoCs that turned AI forecasts into workflows for demand forecasting, supply planning, and transportation across aviation and steel-manufacturing use cases.
+\item Built React/D3 dashboards and executive PoCs that turned AI forecasts into demand, supply and transportation workflows across aviation and steel-manufacturing use cases.
 \end{compactitemize}}
 \twentyitem
 {Nov 2017 -}
@@ -136,8 +138,8 @@
 {\href{http://www.codehall.in/}{\includegraphics[height=0.4cm]{img/Codehall_Technologies_logo.png}}}
 {}
 {\begin{compactitemize}
-\item Led four frontend developers while hands-on building a college-search product, covering architecture, task allocation, and code reviews; separately built the ZenPrivex crypto KYC/investment frontend from login and document upload through KYC and investing.
-\item Wrote DOM traversal/injection logic for RichRelevance recommendation widgets and validated compatibility across roughly 200 client websites using Selenium plus manual testing.
+\item Led four frontend developers while hands-on building a college-search product, and separately built the ZenPrivex KYC/investment frontend from login and document upload through KYC and investing.
+\item Built DOM traversal/injection logic for RichRelevance recommendation widgets and validated compatibility across roughly 200 client websites using Selenium and manual testing.
 \end{compactitemize}}
 \end{twenty}
 
