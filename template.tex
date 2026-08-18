@@ -23,15 +23,24 @@
 	\smartdiagram[bubble diagram]{
         \textbf{React}\\\textbf{TypeScript},
         \textbf{C++}\\\textbf{JUCE},
-        \textbf{Audio}\\\textbf{AI},
-        \textbf{WebGL}\\\textbf{Canvas},
         \textbf{Graph}\\\textbf{Viz},
+        \textbf{WebGL}\\\textbf{Canvas},
+        \textbf{AI}\\\textbf{Audio},
         \textbf{Next.js},
         \textbf{Python},
         \textbf{Cypress},
         \textbf{Vite},
         \textbf{WebRTC}
     }
+}
+
+\renewcommand{\otherSkills}{
+\begin{itemize}
+\item \textbf{Languages:} TypeScript, JavaScript, Python, C++, HTML5/CSS3
+\item \textbf{Frontend:} React, Next.js, Vue, Angular, React Query, Redux, RxJS, Zustand
+\item \textbf{Visualization:} WebGL, Canvas API, D3.js, VisJS, Regraph, Konva
+\item \textbf{Quality \& Delivery:} Cypress, Jest, Storybook, Vite, Webpack, Git, CI/CD
+\end{itemize}
 }
 
 \newcommand{\openstudiobrand}{%
@@ -43,13 +52,13 @@
 
 \aboutme{
 \\
-{\color{black}Senior Software Engineer with 8+ years building performant frontend systems, graph visualization, blockchain analytics, audio tooling, and AI systems.}
+{\color{black}Hands-on software engineer with 8+ years owning complex frontend and product systems across blockchain forensics, graph visualization, collaborative editing, native audio, and local AI. Built greenfield products, scaled interactive graphs to 100K+ nodes, modernized legacy platforms, and mentored engineers while remaining a heavy individual contributor.}
 }
 
 \cveducation{
 \\
-{\color{black}\textbf{B.Tech., Computer Science}}\\
-{\color{black}Netaji Subhash Engineering College}\\
+{\color{black}\textbf{B.Tech., Computer Science \& Engineering}}\\
+{\color{black}Netaji Subhash Engineering College (MAKAUT)}\\
 {\color{black}2013 - 2017}
 }
 
@@ -76,33 +85,31 @@
 {\openstudiobrand}
 {}
 {\begin{compactitemize}
-\item Created a local-first DAW that unifies native low-latency audio, timeline editing, plugin hosting, pitch/audio analysis, and AI-assisted music workflows.
-\item Delivered production depth across multitrack recording, piano roll editing, mixer/routing, VST3-focused plugin workflows, built-in FX, and render/export paths.
-\item Reduced release and runtime friction with optional local AI setup, appcasts, manifests, stable downloads, and GitHub-to-Netlify publishing.
-\item \textbf{Tech Stack:} \textit{C++, JUCE, React, TypeScript, Zustand, Vite, Konva, Python, CMake, WebView2, Netlify}
+\item Sole founder and developer of a native, local-first DAW spanning a C++/JUCE audio engine and React/TypeScript UI; built recording, MIDI/piano-roll editing, mixer/routing, plugin hosting, pitch tooling, and render/export workflows.
+\item Integrated local AI for stem separation, ACE-Step music generation, and Stable Audio; replaced the earlier ComfyUI ACE-Step route with native Hugging Face Diffusers for approximately 3x faster generation.
+\item AI coding agents supported the build, but there were no other human contributors; I handled product design, implementation, and delivery end-to-end.
 \end{compactitemize}}
 \twentyitem
 {Sep 2021 -}
 {Dec 2025}
-{Senior Software Engineer (Remote)}
+{Senior Software Engineer}
 {\href{https://www.merklescience.com/}{\includegraphics[height=0.4cm]{img/Merkle_Science_Logo.png}}}
 {}
 {\begin{compactitemize}
-\item Led Tracker, a blockchain investigation workspace for reasoning across UTXO, EVM, L2, and cross-chain transaction graphs from a unified visual model.
-\item Improved forensic accuracy and analyst throughput with ClickHouse-backed graph analytics, traversal UX, and Txn Split View synchronization.
-\item Cut load/render overhead by \(\sim\)40\% through headless frontend architecture, lazy loading, CDN strategy, and graph-rendering pipeline optimization.
-\item \textbf{Tech Stack:} \textit{React, Next.js, TypeScript, Vue, Regraph, React Query, Tailwind, Jest, Vite, Cypress, Auth0, Python, Django}
+\item Owned the Tracker frontend end-to-end from greenfield through most of its first three years in production, personally implementing nearly all frontend functionality before mentoring junior engineers into the codebase.
+\item Built Transaction Split View, Cluster Analysis, Entity Search, Autofill, Watchlists, sharing/collaboration, cross-chain graphing, address/transaction views, Auto-Investigate, and reports for investigations spanning roughly 1K--100K nodes.
+\item Shaped API contracts and product design, joined customer/sales discussions, and improved responsiveness through lazy loading, caching, payload reduction, progressive data loading, and graph rendering/layout optimization.
+\item Mentored engineers across frontend, backend and blockchain concepts while contributing to reviews, interviews, sprint planning, and technical proposals across a five-person team.
 \end{compactitemize}}
 \twentyitem
 {Aug 2020 -}
 {Sep 2021}
-{Software Developer Contractor (Remote)}
+{Software Developer Contractor}
 {\href{https://www.chainalysis.com/}{\includegraphics[height=0.4cm]{img/Chainalysis_logo.png}}}
 {}
 {\begin{compactitemize}
-\item Improved Reactor investigation performance and reliability for collaborative, high-traffic blockchain analysis workflows.
-\item Scaled graph visualization to 100,000+ node investigations with WebGL/VisJS rendering and BFF resilience patterns over distributed indexers.
-\item \textbf{Tech Stack:} \textit{Angular, VisJS, RxJS, Datadog, Java, Cypress}
+\item One of three engineers who migrated the entire Reactor frontend from AngularJS to Angular 9 in roughly nine months while maintaining a live hybrid AngularJS/Angular application and continuing feature delivery.
+\item Optimized a VisJS fork and initial node positioning for faster, more predictable 100K+ node investigations; Cypress and Applitools regression coverage plus component-library work helped move releases from roughly monthly to weekly.
 \end{compactitemize}}
 \twentyitem
 {Jun 2019 -}
@@ -111,9 +118,7 @@
 {\href{https://spotdraft.com/}{\includegraphics[height=0.4cm]{img/SpotDraft_logo.png}}}
 {}
 {\begin{compactitemize}
-\item Improved contract collaboration reliability with CRDT-style conflict handling, optimistic UI, and isolated editor rendering for heavy document workflows.
-\item Increased acquisition and workflow reach through SEO-focused Gatsby/GraphQL surfaces and scalable legal operations tooling.
-\item \textbf{Tech Stack:} \textit{Angular, React, Gatsby, GraphQL, Redux, RxJS, SCSS}
+\item Built spotdraft.com from scratch with Gatsby/GraphQL for fast delivery even on throttled 3G, and engineered collaborative contract-editor workflows with CRDT-style conflict handling, optimistic UI, isolated editor rendering, and role/permission-based access.
 \end{compactitemize}}
 \twentyitem
 {Nov 2018 -}
@@ -122,8 +127,7 @@
 {\href{https://noodle.ai/}{\includegraphics[height=0.4cm]{img/Noodle_AI_logo.png}}}
 {}
 {\begin{compactitemize}
-\item Turned AI-generated manufacturing and supply-chain forecasts into React/D3 decision dashboards and executive-facing PoCs.
-\item \textbf{Tech Stack:} \textit{React, Redux, SCSS, D3.js, RxJS, Figma}
+\item Built React/D3 decision dashboards and executive-facing PoCs that turned AI forecasts into workflows for demand forecasting, supply planning, and transportation across aviation and steel-manufacturing use cases.
 \end{compactitemize}}
 \twentyitem
 {Nov 2017 -}
@@ -132,8 +136,8 @@
 {\href{http://www.codehall.in/}{\includegraphics[height=0.4cm]{img/Codehall_Technologies_logo.png}}}
 {}
 {\begin{compactitemize}
-\item Delivered frontend systems for ZenPrivex crypto-token KYC, RichRelevance e-commerce personalization/testing, and a college-search product while mentoring junior engineers.
-\item \textbf{Tech Stack:} \textit{React, Redux, Vue, SCSS, Webpack, Python, Django}
+\item Led four frontend developers while hands-on building a college-search product, covering architecture, task allocation, and code reviews; separately built the ZenPrivex crypto KYC/investment frontend from login and document upload through KYC and investing.
+\item Wrote DOM traversal/injection logic for RichRelevance recommendation widgets and validated compatibility across roughly 200 client websites using Selenium plus manual testing.
 \end{compactitemize}}
 \end{twenty}
 
